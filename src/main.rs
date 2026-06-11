@@ -44,9 +44,5 @@ fn is_sun_hover(center_x: f32, center_y: f32, sun_radius: f32) -> bool {
 
     let dist = (dist_x.powi(2) + dist_y.powi(2)).sqrt();
 
-    if dist <= sun_radius {
-        return true;
-    } else {
-        return false;
-    }
+    dist <= sun_radius
 }
